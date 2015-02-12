@@ -195,25 +195,10 @@
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>PC_val</ItemText>
-        </Ww>
-        <Ww>
-          <count>9</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>profile_ticks,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>10</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>RegionCount,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>11</count>
-          <WinNumber>1</WinNumber>
           <ItemText>roll</ItemText>
         </Ww>
         <Ww>
-          <count>12</count>
+          <count>9</count>
           <WinNumber>1</WinNumber>
           <ItemText>pitch</ItemText>
         </Ww>
@@ -258,16 +243,6 @@
           <count>7</count>
           <WinNumber>2</WinNumber>
           <ItemText>adx_lost,0x10</ItemText>
-        </Ww>
-        <Ww>
-          <count>8</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>			data</ItemText>
-        </Ww>
-        <Ww>
-          <count>9</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>data</ItemText>
         </Ww>
       </WatchWindow2>
       <MemoryWindow1>

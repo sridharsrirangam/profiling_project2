@@ -78,7 +78,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>"\\vmware-host\Shared Folders\Desktop\ECE-561\making code fast week4\ProfilerProject - Base\Scripts\update_regions_MDK.bat"</UserProg1Name>
+            <UserProg1Name>"\\vmware-host\Shared Folders\Desktop\ProfilerProject - Base\Scripts\update_regions_MDK.bat"</UserProg1Name>
             <UserProg2Name>C:\Keil\ARM\ARMCC\bin\fromelf.exe -s  --output=symbols.txt --only=.symtab "obj\%L"</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
@@ -345,8 +345,8 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
-            <oTime>1</oTime>
+            <Optim>0</Optim>
+            <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
             <Strict>0</Strict>
@@ -360,7 +360,7 @@
             <uC99>0</uC99>
             <useXO>0</useXO>
             <VariousControls>
-              <MiscControls>--fpmode fast</MiscControls>
+              <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
               <IncludePath>.\inc</IncludePath>
