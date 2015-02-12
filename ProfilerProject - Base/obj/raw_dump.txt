@@ -1,0 +1,547 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: BasicUI.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x000000c1
+    Flags: EF_ARM_HASENTRY (0x05000002)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Built with
+    ARM C/C++ Compiler, 4.1 [Build 894]
+    ARM Assembler, 4.1 [Build 894]
+    ARM Linker, 4.1 [Build 894] 
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 16
+
+    Program header offset: 138992 (0x00021ef0)
+    Section header offset: 139024 (0x00021f10)
+
+    Section header string table index: 15
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 10808 bytes (9784 bytes in file)
+    Virtual address: 0x00000000 (Alignment 8)
+
+
+========================================================================
+
+** Section #1 'ER_IROM1' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 9688 bytes (alignment 8)
+    Address: 0x00000000
+
+
+** Section #2 'RW_IRAM1' (SHT_PROGBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 96 bytes (alignment 4)
+    Address: 0x1ffff000
+
+
+** Section #3 'RW_IRAM1' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 1024 bytes (alignment 8)
+    Address: 0x1ffff060
+
+
+** Section #4 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1476 bytes
+
+
+** Section #5 '.debug_frame' (SHT_PROGBITS)
+    Size   : 2488 bytes
+
+
+** Section #6 '.debug_info' (SHT_PROGBITS)
+    Size   : 15472 bytes
+
+
+** Section #7 '.debug_line' (SHT_PROGBITS)
+    Size   : 3100 bytes
+
+
+** Section #8 '.debug_loc' (SHT_PROGBITS)
+    Size   : 1896 bytes
+
+
+** Section #9 '.debug_macinfo' (SHT_PROGBITS)
+    Size   : 85144 bytes
+
+
+** Section #10 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 982 bytes
+
+
+** Section #11 '.symtab' (SHT_SYMTAB)
+    Size   : 6512 bytes (alignment 4)
+    String table #12 '.strtab'
+    Last local symbol no. 218
+
+    Symbol table .symtab (406 symbols, 218 local)
+
+      #  Symbol Name                Value      Bind  Sec  Type  Vis  Size
+    ========================================================================
+
+      1  $d.realdata                0x00000000   Lc    1   --   De 
+      2  $t                         0x000000c0   Lc    1   --   De 
+      3  $d                         0x000000cc   Lc    1   --   De 
+      4  $t                         0x000000d4   Lc    1   --   De 
+      5  $d                         0x000000e8   Lc    1   --   De 
+      6  $t                         0x000000f0   Lc    1   --   De 
+      7  $d                         0x000001f8   Lc    1   --   De 
+      8  $t                         0x00000202   Lc    1   --   De 
+      9  $d                         0x000002ca   Lc    1   --   De 
+     10  $t                         0x000002fc   Lc    1   --   De 
+     11  $d                         0x00000360   Lc    1   --   De 
+     12  $t                         0x0000036c   Lc    1   --   De 
+     13  $d                         0x0000037e   Lc    1   --   De 
+     14  $t                         0x00000384   Lc    1   --   De 
+     15  $d                         0x000003d2   Lc    1   --   De 
+     16  $t                         0x000003d8   Lc    1   --   De 
+     17  $d                         0x000003fe   Lc    1   --   De 
+     18  $t                         0x00000410   Lc    1   --   De 
+     19  $d                         0x000005f6   Lc    1   --   De 
+     20  $t                         0x00000608   Lc    1   --   De 
+     21  $d                         0x00000736   Lc    1   --   De 
+     22  $t                         0x000007a4   Lc    1   --   De 
+     23  $d                         0x00000866   Lc    1   --   De 
+     24  $t                         0x00000878   Lc    1   --   De 
+     25  $d                         0x00000a58   Lc    1   --   De 
+     26  $t                         0x00000a94   Lc    1   --   De 
+     27  $d                         0x00000ce4   Lc    1   --   De 
+     28  $t                         0x00000cf0   Lc    1   --   De 
+     29  $d                         0x00000ee6   Lc    1   --   De 
+     30  $t                         0x00000f0c   Lc    1   --   De 
+     31  $d                         0x00001102   Lc    1   --   De 
+     32  $t                         0x00001108   Lc    1   --   De 
+     33  $d                         0x000011f2   Lc    1   --   De 
+     34  $t                         0x000011f8   Lc    1   --   De 
+     35  $d                         0x0000155e   Lc    1   --   De 
+     36  $t                         0x00001564   Lc    1   --   De 
+     37  $d                         0x0000163e   Lc    1   --   De 
+     38  $t                         0x00001648   Lc    1   --   De 
+     39  $d                         0x00001664   Lc    1   --   De 
+     40  $t                         0x0000166c   Lc    1   --   De 
+     41  $d                         0x00001724   Lc    1   --   De 
+     42  $t                         0x00001728   Lc    1   --   De 
+     43  $d                         0x0000179a   Lc    1   --   De 
+     44  $t                         0x000017a0   Lc    1   --   De 
+     45  $d                         0x0000185a   Lc    1   --   De 
+     46  $t                         0x00001860   Lc    1   --   De 
+     47  $d                         0x00001886   Lc    1   --   De 
+     48  $t                         0x0000188c   Lc    1   --   De 
+     49  $d                         0x000019c6   Lc    1   --   De 
+     50  $t                         0x000019e4   Lc    1   --   De 
+     51  $d                         0x00001de0   Lc    1   --   De 
+     52  $t                         0x00001e0c   Lc    1   --   De 
+     53  $d                         0x000020ce   Lc    1   --   De 
+     54  $t                         0x000020e0   Lc    1   --   De 
+     55  $d                         0x00002312   Lc    1   --   De 
+     56  $t                         0x00002358   Lc    1   --   De 
+     57  $d                         0x000024a8   Lc    1   --   De 
+     58  $t                         0x000024d0   Lc    1   --   De 
+     59  $d                         0x0000250e   Lc    1   --   De 
+     60  $d.realdata                0x00002518   Lc    1   --   De 
+     61  $d.realdata                0x1ffff000   Lc    2   --   De 
+     62  startup_MKL25Z4.s          0x00000000   Lc  Abs  File  De 
+     63  STACK                      0x1ffff060   Lc    3  Sect  De   0x400
+     64  RESET                      0x00000000   Lc    1  Sect  De   0xc0
+     65  .ARM.__at_0x400            0x00000400   Lc    1  Sect  De   0x10
+     66  .text                      0x000000d4   Lc    1  Sect  De   0x1c
+     67  src\\system_MKL25Z4.c      0x00000000   Lc  Abs  File  De 
+     68  src\system_MKL25Z4.c       0x00000000   Lc  Abs  File  De 
+     69  .text                      0x000000f0   Lc    1  Sect  De 
+     70  .data                      0x1ffff000   Lc    2  Sect  De   0x4
+     71  i.__ARM_common_switch8     0x00001756   Lc    1  Sect  De 
+     72  src\\LCD_4bit.c            0x00000000   Lc  Abs  File  De 
+     73  src\LCD_4bit.c             0x00000000   Lc  Abs  File  De 
+     74  .text                      0x00000410   Lc    1  Sect  De 
+     75  lcd_read_status            0x00000411   Lc    1  Code  De   0x6c
+     76  lcd_write_data             0x000004e3   Lc    1  Code  De   0x1c
+     77  src\\main.c                0x00000000   Lc  Abs  File  De 
+     78  src\main.c                 0x00000000   Lc  Abs  File  De 
+     79  .text                      0x00000608   Lc    1  Sect  De 
+     80  src\\switches.c            0x00000000   Lc  Abs  File  De 
+     81  src\switches.c             0x00000000   Lc  Abs  File  De 
+     82  .text                      0x000002fc   Lc    1  Sect  De 
+     83  .data                      0x1ffff004   Lc    2  Sect  De   0x3c
+     84  src\\LEDs.c                0x00000000   Lc  Abs  File  De 
+     85  src\LEDs.c                 0x00000000   Lc  Abs  File  De 
+     86  .text                      0x000007a4   Lc    1  Sect  De 
+     87  src\\timers.c              0x00000000   Lc  Abs  File  De 
+     88  src\timers.c               0x00000000   Lc  Abs  File  De 
+     89  .text                      0x00000878   Lc    1  Sect  De 
+     90  NVIC_ClearPendingIRQ       0x000009dd   Lc    1  Code  De   0xe
+     91  NVIC_SetPriority           0x000009eb   Lc    1  Code  De   0x6e
+     92  .data                      0x1ffff040   Lc    2  Sect  De   0xc
+     93  LCD_update_delay           0x1ffff048   Lc    2  Data  De   0x4
+     94  src\\i2c.c                 0x00000000   Lc  Abs  File  De 
+     95  src\i2c.c                  0x00000000   Lc  Abs  File  De 
+     96  .text                      0x00000a94   Lc    1  Sect  De 
+     97  src\\mma8451.c             0x00000000   Lc  Abs  File  De 
+     98  src\mma8451.c              0x00000000   Lc  Abs  File  De 
+     99  .text                      0x00000cf0   Lc    1  Sect  De 
+    100  .data                      0x1ffff04c   Lc    2  Sect  De   0x10
+    101  src\\delay.c               0x00000000   Lc  Abs  File  De 
+    102  src\delay.c                0x00000000   Lc  Abs  File  De 
+    103  .text                      0x0000036c   Lc    1  Sect  De 
+    104  ../../atan2.c              0x00000000   Lc  Abs  File  De 
+    105  i.atan2                    0x00002358   Lc    1  Sect  De 
+    106  ../../atan2.c              0x00000000   Lc  Abs  File  De 
+    107  ../../sqrt.c               0x00000000   Lc  Abs  File  De 
+    108  i.sqrt                     0x000024d0   Lc    1  Sect  De 
+    109  ../../sqrt.c               0x00000000   Lc  Abs  File  De 
+    110  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    111  .ARM.Collect$$$$00000000   0x000000c0   Lc    1  Sect  De 
+    112  dc.s                       0x00000000   Lc  Abs  File  De 
+    113  ../../microlib/division.c  0x00000000   Lc  Abs  File  De 
+    114  .text                      0x00000384   Lc    1  Sect  De 
+    115  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    116  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    117  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    118  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    119  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    120  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    121  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    122  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    123  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    124  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    125  ../../microlib/printf/printf.c
+                                    0x00000000   Lc  Abs  File  De 
+    126  i.__0sprintf               0x00001700   Lc    1  Sect  De 
+    127  i._fp_digits               0x0000188c   Lc    1  Sect  De 
+    128  _fp_digits                 0x0000188d   Lc    1  Code  De   0x13a
+    129  i._printf_core             0x000019e4   Lc    1  Sect  De 
+    130  _printf_core               0x000019e5   Lc    1  Code  De   0x6ea
+    131  i._printf_post_padding     0x000020e0   Lc    1  Sect  De 
+    132  _printf_post_padding       0x000020e1   Lc    1  Code  De   0x20
+    133  i._printf_pre_padding      0x00002100   Lc    1  Sect  De 
+    134  _printf_pre_padding        0x00002101   Lc    1  Code  De   0x2c
+    135  i._sputc                   0x0000212c   Lc    1  Sect  De 
+    136  _sputc                     0x0000212d   Lc    1  Code  De   0xa
+    137  ../../microlib/printf/stubs.s
+                                    0x00000000   Lc  Abs  File  De 
+    138  ../../microlib/fpadd.c     0x00000000   Lc  Abs  File  De 
+    139  .text                      0x00000f0c   Lc    1  Sect  De 
+    140  ../../microlib/fpmul.c     0x00000000   Lc  Abs  File  De 
+    141  .text                      0x00000fbe   Lc    1  Sect  De 
+    142  ../../microlib/fpmul.c     0x00000000   Lc  Abs  File  De 
+    143  .text                      0x00001038   Lc    1  Sect  De 
+    144  ../../microlib/fpdiv.c     0x00000000   Lc  Abs  File  De 
+    145  .text                      0x00001108   Lc    1  Sect  De 
+    146  ../../microlib/fpflt.c     0x00000000   Lc  Abs  File  De 
+    147  .text                      0x000003b0   Lc    1  Sect  De 
+    148  ../../microlib/f2d.c       0x00000000   Lc  Abs  File  De 
+    149  .text                      0x000011f8   Lc    1  Sect  De 
+    150  ../../microlib/d2f.c       0x00000000   Lc  Abs  File  De 
+    151  .text                      0x00001226   Lc    1  Sect  De 
+    152  ../../atan.c               0x00000000   Lc  Abs  File  De 
+    153  i.atan                     0x00002138   Lc    1  Sect  De 
+    154  .constdata                 0x00002518   Lc    1  Sect  De   0x98
+    155  atanhi                     0x00002518   Lc    1  Data  De   0x20
+    156  atanlo                     0x00002538   Lc    1  Data  De   0x20
+    157  aTodd                      0x00002558   Lc    1  Data  De   0x28
+    158  aTeven                     0x00002580   Lc    1  Data  De   0x30
+    159  ../../atan.c               0x00000000   Lc  Abs  File  De 
+    160  ../../qnan.c               0x00000000   Lc  Abs  File  De 
+    161  .constdata                 0x000025b0   Lc    1  Sect  De   0x8
+    162  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    163  .ARM.Collect$$$$00000001   0x000000c0   Lc    1  Sect  De   0x4
+    164  .ARM.Collect$$$$00002712   0x000000d0   Lc    1  Sect  De   0x4
+    165  __lit__00000000            0x000000d0   Lc    1  Data  De   0x4
+    166  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    167  .ARM.Collect$$$$00000004   0x000000c4   Lc    1  Sect  De   0x4
+    168  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    169  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    170  .ARM.Collect$$$$00000008   0x000000c8   Lc    1  Sect  De 
+    171  ../../microlib/init/entry.s
+                                    0x00000000   Lc  Abs  File  De 
+    172  .ARM.Collect$$$$00000009   0x000000c8   Lc    1  Sect  De   0x8
+    173  ../../microlib/stdio/fputc.c
+                                    0x00000000   Lc  Abs  File  De 
+    174  ../../microlib/stdio/streams.c
+                                    0x00000000   Lc  Abs  File  De 
+    175  ../../microlib/division.c  0x00000000   Lc  Abs  File  De 
+    176  .text                      0x0000125e   Lc    1  Sect  De 
+    177  ../../microlib/errno.c     0x00000000   Lc  Abs  File  De 
+    178  i.__set_errno              0x00001880   Lc    1  Sect  De 
+    179  .data                      0x1ffff05c   Lc    2  Sect  De   0x4
+    180  _errno                     0x1ffff05c   Lc    2  Data  De   0x4
+    181  ../../microlib/stubs.s     0x00000000   Lc  Abs  File  De 
+    182  .text                      0x000003d8   Lc    1  Sect  De 
+    183  ../../microlib/fpepilogue.c
+                                    0x00000000   Lc  Abs  File  De 
+    184  .text                      0x000012b8   Lc    1  Sect  De 
+    185  ../../microlib/fpepilogue.c
+                                    0x00000000   Lc  Abs  File  De 
+    186  .text                      0x0000133c   Lc    1  Sect  De 
+    187  i.__ARM_clz                0x00001728   Lc    1  Sect  De 
+    188  ../../microlib/fpadd.c     0x00000000   Lc  Abs  File  De 
+    189  .text                      0x000013fc   Lc    1  Sect  De 
+    190  ../../microlib/fpsqrt.c    0x00000000   Lc  Abs  File  De 
+    191  .text                      0x00001564   Lc    1  Sect  De 
+    192  ../../microlib/fpfix.c     0x00000000   Lc  Abs  File  De 
+    193  .text                      0x00001608   Lc    1  Sect  De 
+    194  cdcmple.s                  0x00000000   Lc  Abs  File  De 
+    195  cdrcmple.s                 0x00000000   Lc  Abs  File  De 
+    196  .text                      0x000003d8   Lc    1  Sect  De   0x28
+    197  ../../dunder.c             0x00000000   Lc  Abs  File  De 
+    198  i.__mathlib_dbl_underflow  0x0000184c   Lc    1  Sect  De 
+    199  ../../fpclassify.c         0x00000000   Lc  Abs  File  De 
+    200  i.__ARM_fpclassify         0x00001774   Lc    1  Sect  De 
+    201  ../../poly.c               0x00000000   Lc  Abs  File  De 
+    202  i.__kernel_poly            0x000017a0   Lc    1  Sect  De 
+    203  init.s                     0x00000000   Lc  Abs  File  De 
+    204  .text                      0x00001648   Lc    1  Sect  De   0x24
+    205  ../../microlib/stdio/semi.s
+                                    0x00000000   Lc  Abs  File  De 
+    206  ../../microlib/longlong.c  0x00000000   Lc  Abs  File  De 
+    207  .text                      0x0000166c   Lc    1  Sect  De 
+    208  ../../microlib/longlong.c  0x00000000   Lc  Abs  File  De 
+    209  .text                      0x0000168c   Lc    1  Sect  De 
+    210  ../../microlib/longlong.c  0x00000000   Lc  Abs  File  De 
+    211  .text                      0x000016ae   Lc    1  Sect  De 
+    212  ../../microlib/stubs.s     0x00000000   Lc  Abs  File  De 
+    213  ../../microlib/fpscalb.c   0x00000000   Lc  Abs  File  De 
+    214  .text                      0x000016d4   Lc    1  Sect  De 
+    215  handlers.s                 0x00000000   Lc  Abs  File  De 
+    216  i.__scatterload_copy       0x00001860   Lc    1  Sect  De   0xe
+    217  i.__scatterload_null       0x0000186e   Lc    1  Sect  De   0x2
+    218  i.__scatterload_zeroinit   0x00001870   Lc    1  Sect  De   0xe
+    219  BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$EBA8$MICROLIB$REQ8$PRES8$EABIv2
+                                    0x00000000   Gb  Abs   --   Hi 
+    220  __ARM_use_no_argv          0x00000000   Gb  Abs   --   Hi 
+    221  __Vectors                  0x00000000   Gb    1  Data  Hi   0x4
+    222  _printf_a                  0x00000000   Gb  Abs   --   Hi 
+    223  _printf_c                  0x00000000   Gb  Abs   --   Hi 
+    224  _printf_charcount          0x00000000   Gb  Abs   --   Hi 
+    225  _printf_d                  0x00000000   Gb  Abs   --   Hi 
+    226  _printf_e                  0x00000000   Gb  Abs   --   Hi 
+    227  _printf_f                  0x00000000   Gb  Abs   --   Hi 
+    228  _printf_flags              0x00000000   Gb  Abs   --   Hi 
+    229  _printf_fp_dec             0x00000000   Gb  Abs   --   Hi 
+    230  _printf_fp_hex             0x00000000   Gb  Abs   --   Hi 
+    231  _printf_g                  0x00000000   Gb  Abs   --   Hi 
+    232  _printf_i                  0x00000000   Gb  Abs   --   Hi 
+    233  _printf_int_dec            0x00000000   Gb  Abs   --   Hi 
+    234  _printf_l                  0x00000000   Gb  Abs   --   Hi 
+    235  _printf_lc                 0x00000000   Gb  Abs   --   Hi 
+    236  _printf_ll                 0x00000000   Gb  Abs   --   Hi 
+    237  _printf_lld                0x00000000   Gb  Abs   --   Hi 
+    238  _printf_lli                0x00000000   Gb  Abs   --   Hi 
+    239  _printf_llo                0x00000000   Gb  Abs   --   Hi 
+    240  _printf_llu                0x00000000   Gb  Abs   --   Hi 
+    241  _printf_llx                0x00000000   Gb  Abs   --   Hi 
+    242  _printf_longlong_dec       0x00000000   Gb  Abs   --   Hi 
+    243  _printf_longlong_hex       0x00000000   Gb  Abs   --   Hi 
+    244  _printf_longlong_oct       0x00000000   Gb  Abs   --   Hi 
+    245  _printf_ls                 0x00000000   Gb  Abs   --   Hi 
+    246  _printf_mbtowc             0x00000000   Gb  Abs   --   Hi 
+    247  _printf_n                  0x00000000   Gb  Abs   --   Hi 
+    248  _printf_o                  0x00000000   Gb  Abs   --   Hi 
+    249  _printf_p                  0x00000000   Gb  Abs   --   Hi 
+    250  _printf_percent            0x00000000   Gb  Abs   --   Hi 
+    251  _printf_pre_padding        0x00000000   Gb  Abs   --   Hi 
+    252  _printf_return_value       0x00000000   Gb  Abs   --   Hi 
+    253  _printf_s                  0x00000000   Gb  Abs   --   Hi 
+    254  _printf_sizespec           0x00000000   Gb  Abs   --   Hi 
+    255  _printf_str                0x00000000   Gb  Abs   --   Hi 
+    256  _printf_truncate_signed    0x00000000   Gb  Abs   --   Hi 
+    257  _printf_truncate_unsigned  0x00000000   Gb  Abs   --   Hi 
+    258  _printf_u                  0x00000000   Gb  Abs   --   Hi 
+    259  _printf_wc                 0x00000000   Gb  Abs   --   Hi 
+    260  _printf_wctomb             0x00000000   Gb  Abs   --   Hi 
+    261  _printf_widthprec          0x00000000   Gb  Abs   --   Hi 
+    262  _printf_x                  0x00000000   Gb  Abs   --   Hi 
+    263  __Vectors_End              0x000000c0   Gb    1  Data  Hi 
+    264  __Vectors_Size             0x000000c0   Gb  Abs   --   Hi 
+    265  __main                     0x000000c1   Gb    1  Code  Hi 
+    266  _main_stk                  0x000000c1   Gb    1  Code  Hi 
+    267  _main_scatterload          0x000000c5   Gb    1  Code  Hi 
+    268  __main_after_scatterload   0x000000c9   Gb    1  Code  Hi 
+    269  _main_clock                0x000000c9   Gb    1  Code  Hi 
+    270  _main_init                 0x000000c9   Gb    1  Code  Hi 
+    271  Reset_Handler              0x000000d5   Wk    1  Code  Hi   0x8
+    272  NMI_Handler                0x000000dd   Wk    1  Code  Hi   0x2
+    273  HardFault_Handler          0x000000df   Wk    1  Code  Hi   0x2
+    274  SVC_Handler                0x000000e1   Wk    1  Code  Hi   0x2
+    275  PendSV_Handler             0x000000e3   Wk    1  Code  Hi   0x2
+    276  SysTick_Handler            0x000000e5   Wk    1  Code  Hi   0x2
+    277  ADC0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    278  CMP0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    279  DAC0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    280  DMA0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    281  DMA1_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    282  DMA2_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    283  DMA3_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    284  DefaultISR                 0x000000e7   Wk    1  Code  Hi 
+    285  FTFA_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    286  I2C0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    287  I2C1_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    288  LLW_IRQHandler             0x000000e7   Wk    1  Code  Hi 
+    289  LPTimer_IRQHandler         0x000000e7   Wk    1  Code  Hi 
+    290  LVD_LVW_IRQHandler         0x000000e7   Wk    1  Code  Hi 
+    291  MCG_IRQHandler             0x000000e7   Wk    1  Code  Hi 
+    292  PORTA_IRQHandler           0x000000e7   Wk    1  Code  Hi 
+    293  PORTD_IRQHandler           0x000000e7   Wk    1  Code  Hi 
+    294  RTC_IRQHandler             0x000000e7   Wk    1  Code  Hi 
+    295  RTC_Seconds_IRQHandler     0x000000e7   Wk    1  Code  Hi 
+    296  Reserved20_IRQHandler      0x000000e7   Wk    1  Code  Hi 
+    297  Reserved39_IRQHandler      0x000000e7   Wk    1  Code  Hi 
+    298  Reserved45_IRQHandler      0x000000e7   Wk    1  Code  Hi 
+    299  SPI0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    300  SPI1_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    301  TPM0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    302  TPM1_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    303  TPM2_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    304  TSI0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    305  UART0_IRQHandler           0x000000e7   Wk    1  Code  Hi 
+    306  UART1_IRQHandler           0x000000e7   Wk    1  Code  Hi 
+    307  UART2_IRQHandler           0x000000e7   Wk    1  Code  Hi 
+    308  USB0_IRQHandler            0x000000e7   Wk    1  Code  Hi 
+    309  SystemInit                 0x000000f1   Gb    1  Code  Hi   0xa4
+    310  SystemCoreClockUpdate      0x00000195   Gb    1  Code  Hi   0x136
+    311  Init_5way_Switch           0x000002fd   Gb    1  Code  Hi   0x1a
+    312  ReadSwitchesViaAnalog      0x00000317   Gb    1  Code  Hi   0x4a
+    313  Delay                      0x0000036d   Gb    1  Code  Hi   0x12
+    314  __aeabi_uidiv              0x00000385   Gb    1  Code  Hi 
+    315  __aeabi_uidivmod           0x00000385   Gb    1  Code  Hi   0x2c
+    316  __aeabi_i2d                0x000003b1   Gb    1  Code  Hi   0x22
+    317  __I$use$fp                 0x000003d9   Gb    1  Code  Hi 
+    318  __aeabi_cdrcmple           0x000003d9   Gb    1  Code  Hi   0x26
+    319  wait_while_busy            0x0000047d   Gb    1  Code  Hi   0x10
+    320  lcd_write_4bit             0x0000048d   Gb    1  Code  Hi   0x3a
+    321  lcd_write_cmd              0x000004c7   Gb    1  Code  Hi   0x1c
+    322  lcd_putchar                0x000004ff   Gb    1  Code  Hi   0xc
+    323  lcd_init_port              0x0000050b   Gb    1  Code  Hi   0x26
+    324  Init_LCD                   0x00000531   Gb    1  Code  Hi   0x86
+    325  Set_Cursor                 0x000005b7   Gb    1  Code  Hi   0x18
+    326  Clear_LCD                  0x000005cf   Gb    1  Code  Hi   0x12
+    327  Print_LCD                  0x000005e1   Gb    1  Code  Hi   0x16
+    328  Test_Switches              0x00000609   Gb    1  Code  Hi   0x26
+    329  Test_Switches_And_LCD      0x0000062f   Gb    1  Code  Hi   0x68
+    330  main                       0x00000697   Gb    1  Code  Hi   0xa0
+    331  Init_RGB_LEDs              0x000007a5   Gb    1  Code  Hi   0x7c
+    332  Control_RGB_LEDs           0x00000821   Gb    1  Code  Hi   0x46
+    333  Init_PIT                   0x00000879   Gb    1  Code  Hi   0x60
+    334  Start_PIT                  0x000008d9   Gb    1  Code  Hi   0xe
+    335  Stop_PIT                   0x000008e7   Gb    1  Code  Hi   0xe
+    336  PIT_IRQHandler             0x000008f5   Gb    1  Code  Hi   0x60
+    337  Init_PWM                   0x00000955   Gb    1  Code  Hi   0x6c
+    338  Set_PWM_Values             0x000009c1   Gb    1  Code  Hi   0x1c
+    339  i2c_init                   0x00000a95   Gb    1  Code  Hi   0x4a
+    340  i2c_start                  0x00000adf   Gb    1  Code  Hi   0x1a
+    341  i2c_read_setup             0x00000af9   Gb    1  Code  Hi   0x6a
+    342  i2c_repeated_read          0x00000b63   Gb    1  Code  Hi   0x50
+    343  i2c_read_byte              0x00000bb3   Gb    1  Code  Hi   0xbc
+    344  i2c_write_byte             0x00000c6f   Gb    1  Code  Hi   0x76
+    345  init_mma                   0x00000cf1   Gb    1  Code  Hi   0x36
+    346  read_full_xyz              0x00000d27   Gb    1  Code  Hi   0x82
+    347  read_xyz                   0x00000da9   Gb    1  Code  Hi   0x3a
+    348  convert_xyz_to_roll_pitch  0x00000de3   Gb    1  Code  Hi   0x104
+    349  __aeabi_fadd               0x00000f0d   Gb    1  Code  Hi   0xa2
+    350  __aeabi_fsub               0x00000faf   Gb    1  Code  Hi   0x8
+    351  __aeabi_frsub              0x00000fb7   Gb    1  Code  Hi   0x8
+    352  __aeabi_fmul               0x00000fbf   Gb    1  Code  Hi   0x7a
+    353  __aeabi_dmul               0x00001039   Gb    1  Code  Hi   0xca
+    354  __aeabi_ddiv               0x00001109   Gb    1  Code  Hi   0xea
+    355  __aeabi_f2d                0x000011f9   Gb    1  Code  Hi   0x2e
+    356  __aeabi_d2f                0x00001227   Gb    1  Code  Hi   0x38
+    357  __aeabi_uldivmod           0x0000125f   Gb    1  Code  Hi   0x5a
+    358  _float_round               0x000012b9   Gb    1  Code  Hi   0x10
+    359  _float_epilogue            0x000012c9   Gb    1  Code  Hi   0x74
+    360  _double_round              0x0000133d   Gb    1  Code  Hi   0x1a
+    361  _double_epilogue           0x00001357   Gb    1  Code  Hi   0xa6
+    362  __aeabi_dadd               0x000013fd   Gb    1  Code  Hi   0x14a
+    363  __aeabi_dsub               0x00001547   Gb    1  Code  Hi   0xc
+    364  __aeabi_drsub              0x00001553   Gb    1  Code  Hi   0xc
+    365  _dsqrt                     0x00001565   Gb    1  Code  Hi   0xa2
+    366  __aeabi_d2ulz              0x00001609   Gb    1  Code  Hi   0x36
+    367  __scatterload              0x00001649   Gb    1  Code  Hi   0x1c
+    368  __scatterload_rt2          0x00001649   Gb    1  Code  Hi 
+    369  __aeabi_llsl               0x0000166d   Gb    1  Code  Hi   0x20
+    370  _ll_shift_l                0x0000166d   Gb    1  Code  Hi 
+    371  __aeabi_llsr               0x0000168d   Gb    1  Code  Hi   0x22
+    372  _ll_ushift_r               0x0000168d   Gb    1  Code  Hi 
+    373  __aeabi_lasr               0x000016af   Gb    1  Code  Hi   0x26
+    374  _ll_sshift_r               0x000016af   Gb    1  Code  Hi 
+    375  __ARM_scalbn               0x000016d5   Gb    1  Code  Hi   0x2c
+    376  scalbn                     0x000016d5   Gb    1  Code  Hi 
+    377  __0sprintf                 0x00001701   Gb    1  Code  Hi   0x24
+    378  __1sprintf                 0x00001701   Gb    1  Code  Hi 
+    379  __2sprintf                 0x00001701   Gb    1  Code  Hi 
+    380  __c89sprintf               0x00001701   Gb    1  Code  Hi 
+    381  sprintf                    0x00001701   Gb    1  Code  Hi 
+    382  __ARM_clz                  0x00001729   Gb    1  Code  Hi   0x2e
+    383  __ARM_common_switch8       0x00001757   Gb    1  Code  Hi   0x1c
+    384  __ARM_fpclassify           0x00001775   Gb    1  Code  De   0x26
+    385  __kernel_poly              0x000017a1   Gb    1  Code  De   0xac
+    386  __mathlib_dbl_underflow    0x0000184d   Gb    1  Code  De   0xe
+    387  __scatterload_copy         0x00001861   Gb    1  Code  Hi   0xe
+    388  __scatterload_null         0x0000186f   Gb    1  Code  Hi   0x2
+    389  __scatterload_zeroinit     0x00001871   Gb    1  Code  Hi   0xe
+    390  __set_errno                0x00001881   Gb    1  Code  Hi   0x6
+    391  atan                       0x00002139   Gb    1  Code  De   0x1da
+    392  atan2                      0x00002359   Gb    1  Code  Hi   0x150
+    393  sqrt                       0x000024d1   Gb    1  Code  Hi   0x3e
+    394  __mathlib_zero             0x000025b0   Gb    1  Data  De   0x8
+    395  Region$$Table$$Base        0x000025b8   Gb    1   --   Hi 
+    396  Region$$Table$$Limit       0x000025d8   Gb    1   --   Hi 
+    397  SystemCoreClock            0x1ffff000   Gb    2  Data  Hi   0x4
+    398  switch_converter           0x1ffff004   Gb    2  Data  Hi   0x3c
+    399  PIT_interrupt_counter      0x1ffff040   Gb    2  Data  Hi   0x4
+    400  LCD_update_requested       0x1ffff044   Gb    2  Data  Hi   0x4
+    401  acc_X                      0x1ffff04c   Gb    2  Data  Hi   0x2
+    402  acc_Y                      0x1ffff04e   Gb    2  Data  Hi   0x2
+    403  acc_Z                      0x1ffff050   Gb    2  Data  Hi   0x2
+    404  roll                       0x1ffff054   Gb    2  Data  Hi   0x4
+    405  pitch                      0x1ffff058   Gb    2  Data  Hi   0x4
+    406  __initial_sp               0x1ffff460   Gb    3  Data  Hi 
+
+
+** Section #12 '.strtab' (SHT_STRTAB)
+    Size   : 4408 bytes
+
+
+** Section #13 '.note' (SHT_NOTE)
+    Size   : 28 bytes (alignment 4)
+
+
+** Section #14 '.comment' (SHT_PROGBITS)
+    Size   : 7492 bytes
+
+
+** Section #15 '.shstrtab' (SHT_STRTAB)
+    Size   : 156 bytes
+
+

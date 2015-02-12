@@ -1,0 +1,117 @@
+Dependencies for Project 'BasicUI', Target 'KL25Z Flash': (DO NOT MODIFY !)
+F (.\src\system_MKL25Z4.c)(0x50046F50)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\system_mkl25z4.o --list_dir ".\\lst\\" --list --omf_browse .\obj\system_mkl25z4.crf --depend .\obj\system_mkl25z4.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.h)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+F (.\asm\startup_MKL25Z4.s)(0x4FEE1BF4)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\startup_mkl25z4.o --depend .\obj\startup_mkl25z4.d)
+F (.\src\LCD_4bit.c)(0x52111231)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\lcd_4bit.o --list_dir ".\\lst\\" --list --omf_browse .\obj\lcd_4bit.crf --depend .\obj\lcd_4bit.d)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\LCD_4bit.h)(0x51AA3360)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\delay.h)(0x51A5FFA0)
+F (.\src\main.c)(0x52C89A24)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\main.o --list_dir ".\\lst\\" --list --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C851F4)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\gpio_defs.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\LCD_4bit.h)(0x51AA3360)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\LEDs.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\switches.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\timers.h)(0x520FF5FC)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\i2c.h)(0x500D6EA8)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\mma8451.h)(0x5172ACBC)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\delay.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\profile.h)(0x52C82A2F)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C851F4)
+F (.\src\switches.c)(0x51A5FF6E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\switches.o --list_dir ".\\lst\\" --list --omf_browse .\obj\switches.crf --depend .\obj\switches.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\switches.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\gpio_defs.h)(0x51A5FFA0)
+F (.\src\LEDs.c)(0x51A5FF6E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\leds.o --list_dir ".\\lst\\" --list --omf_browse .\obj\leds.crf --depend .\obj\leds.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\LEDs.h)(0x51A5FFA0)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\gpio_defs.h)(0x51A5FFA0)
+F (.\src\timers.c)(0x52C836B5)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\timers.o --list_dir ".\\lst\\" --list --omf_browse .\obj\timers.crf --depend .\obj\timers.d)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\timers.h)(0x520FF5FC)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.h)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\region.h)(0x52C6D2BC)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\profile.h)(0x52C82A2F)
+F (.\src\i2c.c)(0x500EF4EC)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\i2c.o --list_dir ".\\lst\\" --list --omf_browse .\obj\i2c.crf --depend .\obj\i2c.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\i2c.h)(0x500D6EA8)
+F (.\src\mma8451.c)(0x51CB4BC2)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\mma8451.o --list_dir ".\\lst\\" --list --omf_browse .\obj\mma8451.crf --depend .\obj\mma8451.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\mma8451.h)(0x5172ACBC)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\i2c.h)(0x500D6EA8)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\delay.h)(0x51A5FFA0)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C851F4)
+F (.\src\delay.c)(0x51A5FF6E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\delay.o --list_dir ".\\lst\\" --list --omf_browse .\obj\delay.crf --depend .\obj\delay.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+F (.\src\geometry.c)(0x52115A69)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\geometry.o --list_dir ".\\lst\\" --list --omf_browse .\obj\geometry.crf --depend .\obj\geometry.d)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\geometry.h)(0x5210AAF2)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C851F4)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C851F4)
+F (.\src\sine_table.c)(0x52128C05)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\sine_table.o --list_dir ".\\lst\\" --list --omf_browse .\obj\sine_table.crf --depend .\obj\sine_table.d)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.H)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C851F4)
+F (.\src\profile.c)(0x52CB1F3C)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\profile.o --list_dir ".\\lst\\" --list --omf_browse .\obj\profile.crf --depend .\obj\profile.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C851F4)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\timers.h)(0x520FF5FC)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\MKL25Z4.h)(0x51C84AA8)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0plus.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C84FFA)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C84FFA)
+I (C:\Keil\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h)(0x51C84AAA)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\region.h)(0x52C6D2BC)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\profile.h)(0x52C82A2F)
+F (.\src\region.c)(0x52C89A9E)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O3 -Otime --apcs=interwork --asm --interleave --asm_dir ".\\lst\\" -I.\inc --fpmode=fast --interleave-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Freescale\Kinetis-o .\obj\region.o --list_dir ".\\lst\\" --list --omf_browse .\obj\region.crf --depend .\obj\region.d)
+I (C:\Users\Alex\Documents\Teaching\Book Writing\ARM Cortex M0Plus\Content\AdvancedCourse\Speed\Code\ProfilerProject\inc\region.h)(0x52C6D2BC)
+F (.\include\gpio_defs.h)(0x00000000)()
+F (.\include\lcd_4bit.h)(0x00000000)()
+F (.\include\switches.h)(0x00000000)()
