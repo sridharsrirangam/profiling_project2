@@ -16,8 +16,9 @@
 
 #define WHOAMI 0x1A
 
-#define COUNTS_PER_G (16384.0)
-#define M_PI (3.14159265)
+#define COUNTS_PER_G (16384.0f)
+#define M_PI (3.14159265f)
+#define overPi (57.29577958f)
 
 int init_mma(void);
 void read_full_xyz(void);
