@@ -6,6 +6,7 @@
 
 int16_t acc_X=0, acc_Y=0, acc_Z=0;
 float roll=0.0, pitch=0.0;
+float pitch2=0.0;
 
 //mma data ready
 extern uint32_t DATA_READY;
@@ -52,6 +53,7 @@ void read_full_xyz()
 			data[i] = i2c_repeated_read(0);
 	}
 	
+	
 	temp[0] = (int16_t)((data[0]<<8) | (data[1]<<2));
 	temp[1] = (int16_t)((data[2]<<8) | (data[3]<<2));
 	temp[2] = (int16_t)((data[4]<<8) | (data[5]<<2));
@@ -74,13 +76,43 @@ void read_xyz(void)
 
 }
 
+/*float sqqrt( float x)
+{ 
+	float z;
+	z= powf(2,(log2f(x)/2));
+}*/
+#if 0
+	float norm_atan2( float y, float x )
+		{
+		
+static const uint32_t sign_mask = 0x80000000;
+			static const float b = 0.596227f;
+// Extract the sign bits
+uint32_t ux_s = sign_mask & (uint32_t)x;
+uint32_t uy_s = sign_mask & (uint32_t)y;
+// Determine the quadrant offset 
+			float q=(float)(( ~ux_s&uy_s)>>29|ux_s>>30);
+// Calculate the arctangent in the first quadrant
+			float bxy_a = fabs(b*x*y); 
+			float num=bxy_a+y*y; 
+			float atan_1q=num/(x*x+bxy_a+num);
+// Translate it to the proper quadrant
+uint32_t uatan_2q = (ux_s ^ uy_s )| (uint32_t)atan_1q;
+			return (q + (float)uatan_2q);
+}
+#endif
 void convert_xyz_to_roll_pitch(void) {
-	float ax = acc_X/COUNTS_PER_G,
-				ay = acc_Y/COUNTS_PER_G,
-				az = acc_Z/COUNTS_PER_G;
-	
-	roll = atan2f(ay, az)*overPi;
-	pitch = atan2f(ax, sqrt(ay*ay + az*az))*overPi;
+	float ax = acc_X*iCOUNTS_PER_G,
+				ay = acc_Y*iCOUNTS_PER_G,
+				az = acc_Z*iCOUNTS_PER_G;
+#if 0	
+	float y2 = ay*ay;
+	float z2 = az*az;
+	float yz = y2+z2;
+#endif	
+ roll = atan2f(ay, az)*overPi;
+ pitch = asinf(ax)*overPi;
+	//pitch = norm_atan2(ax, sqrtf(yz))*overPi; //calculate using sin
 	
 }
 

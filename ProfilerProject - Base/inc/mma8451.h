@@ -17,6 +17,7 @@
 #define WHOAMI 0x1A
 
 #define COUNTS_PER_G (16384.0f)
+#define iCOUNTS_PER_G (0.00006103515625f)
 #define M_PI (3.14159265f)
 #define overPi (57.29577958f)
 
