@@ -5,6 +5,7 @@
 #include <math.h>
 
 int16_t acc_X=0, acc_Y=0, acc_Z=0;
+//float acc_X=0, acc_Y=0, acc_Z=0;
 float roll=0.0, pitch=0.0;
 float pitch2=0.0;
 
@@ -25,7 +26,7 @@ int init_mma()
 		  i2c_write_byte(MMA_ADDR, REG_CTRL4, 0x01);
 		  Delay(100);
 		  //set active 14bit mode and 100Hz (0x19)
-		  i2c_write_byte(MMA_ADDR, REG_CTRL1, 0x01);
+		  i2c_write_byte(MMA_ADDR, REG_CTRL1, 0x03);
 				
 		  //enable the irq in the NVIC
 		  //NVIC_EnableIRQ(PORTA_IRQn);
@@ -41,11 +42,23 @@ void read_full_xyz()
 {
 	int i;
 	uint8_t data[6];
-	int16_t temp[3];
-	
+	//int16_t temp[3];
+	float temp[3];
 	i2c_start();
 	i2c_read_setup(MMA_ADDR , REG_XHI);
 	
+	for (i=0;i<3;i++)
+	{
+		if(i==2)
+			data[i] = i2c_repeated_read(1);
+		else
+			data[i] = i2c_repeated_read(0);
+	}
+	temp[0] = (data[0]<<8);
+	temp[1] = (data[1]<<8);
+	temp[2] = (data[2]<<8);
+	
+	/*
 	for( i=0;i<6;i++)	{
 		if(i==5)
 			data[i] = i2c_repeated_read(1);
@@ -54,9 +67,11 @@ void read_full_xyz()
 	}
 	
 	
-	temp[0] = (int16_t)((data[0]<<8) | (data[1]<<2));
-	temp[1] = (int16_t)((data[2]<<8) | (data[3]<<2));
-	temp[2] = (int16_t)((data[4]<<8) | (data[5]<<2));
+	temp[0] = (int16_t)((data[0]<<8) | (data[1]));
+	temp[1] = (int16_t)((data[2]<<8) | (data[3]));
+	temp[2] = (int16_t)((data[4]<<8) | (data[5]));
+*/
+	
 	
 	acc_X = temp[0];
 	acc_Y = temp[1];
@@ -109,9 +124,9 @@ void convert_xyz_to_roll_pitch(void) {
 	float y2 = ay*ay;
 	float z2 = az*az;
 	float yz = y2+z2;
-#endif	
- roll = atan2f(ay, az)*overPi;
- pitch = asinf(ax)*overPi;
+#endif
+ pitch = asinf(-ax)*overPi;
+ roll = atan2f(ay,az)*overPi;
 	//pitch = norm_atan2(ax, sqrtf(yz))*overPi; //calculate using sin
 	
 }
