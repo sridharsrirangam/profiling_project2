@@ -14,6 +14,9 @@
 
 #include "delay.h"
 #include "profile.h"
+#include "trigger.h"
+
+uint32_t t,tgr;
 
 /*----------------------------------------------------------------------------
   MAIN function
@@ -21,11 +24,14 @@
 int main (void) {
 	uint32_t i;
 	uint16_t res=0;
+	
+	
 #ifdef USE_LCD
 	char buffer[9];
 #endif
 	
 	Init_RGB_LEDs();
+
 	// Initializing, so turn on yellow
 	Control_RGB_LEDs(1, 1, 0);
 
@@ -40,7 +46,8 @@ int main (void) {
 	
 
 
-	i2c_init();																/* init i2c	*/
+	i2c_init();		/* init i2c	*/
+	init_trigger();
 	res = init_mma();													/* init mma peripheral */
 	if (res == 0) {
 		// Signal error condition
@@ -78,7 +85,17 @@ int main (void) {
 	// Done, turn on blue LED
 	Control_RGB_LEDs(0, 0, 1);
 	while (1)
-		;
+	{
+ t = PTB->PDIR;
+ tgr = ((t & trigger_mask));	
+ if(!(tgr & ptb_pin_9))
+ {
+ Control_RGB_LEDs(0,1,0);	 
+	}
+ else if((tgr & ptb_pin_8))
+ {
+  Control_RGB_LEDs(1,0,0); 
 }
-
+}
+}
 // *******************************ARM University Program Copyright © ARM Ltd 2013*************************************   

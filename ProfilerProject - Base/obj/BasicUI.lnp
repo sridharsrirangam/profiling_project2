@@ -11,6 +11,7 @@
 ".\obj\sine_table.o"
 ".\obj\profile.o"
 ".\obj\region.o"
+".\obj\trigger.o"
 --library_type=microlib --strict --scatter ".\obj\BasicUI.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

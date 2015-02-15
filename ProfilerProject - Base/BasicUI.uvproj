@@ -471,6 +471,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\region.c</FilePath>
             </File>
+            <File>
+              <FileName>trigger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\trigger.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

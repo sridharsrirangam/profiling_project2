@@ -16,3 +16,4 @@
 .\obj\main.o: .\inc\mma8451.h
 .\obj\main.o: .\inc\delay.h
 .\obj\main.o: .\inc\profile.h
+.\obj\main.o: .\inc\trigger.h
