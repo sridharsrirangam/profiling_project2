@@ -12,7 +12,9 @@
 ".\obj\profile.o"
 ".\obj\region.o"
 ".\obj\trigger.o"
+".\obj\heading_calc.o"
 --library_type=microlib --strict --scatter ".\obj\BasicUI.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+
+C:\Keil_v5\ARM\CMSIS\Lib\ARM\arm_cortexM0l_math.lib --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\lst\BasicUI.map" -o .\obj\BasicUI.axf

@@ -7,7 +7,7 @@
 int16_t acc_X=0, acc_Y=0, acc_Z=0;
 //float acc_X=0, acc_Y=0, acc_Z=0;
 float roll=0.0, pitch=0.0;
-float pitch2=0.0;
+float roll_r=0.0,pitch_r=0.0;
 
 //mma data ready
 extern uint32_t DATA_READY;
@@ -125,8 +125,11 @@ void convert_xyz_to_roll_pitch(void) {
 	float z2 = az*az;
 	float yz = y2+z2;
 #endif
- pitch = asinf(-ax)*overPi;
- roll = atan2f(ay,az)*overPi;
+ pitch_r= asinf(-ax);
+pitch=	(float)pitch_r*overPi;
+ //roll = asinf(ay/cosf(pitch));
+ roll_r = atan2f(ay,az);
+	roll=(float)roll_r*overPi;
 	//pitch = norm_atan2(ax, sqrtf(yz))*overPi; //calculate using sin
 	
 }

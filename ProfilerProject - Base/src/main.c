@@ -15,8 +15,12 @@
 #include "delay.h"
 #include "profile.h"
 #include "trigger.h"
+#include "heading_calc.h"
+#include "sine_table.h"
+
 
 uint32_t t,tgr;
+uint8_t r;
 
 /*----------------------------------------------------------------------------
   MAIN function
@@ -45,7 +49,7 @@ int main (void) {
 #endif
 	
 
-
+  Init_SineTable();
 	i2c_init();		/* init i2c	*/
 	init_trigger();
 	res = init_mma();													/* init mma peripheral */
@@ -67,8 +71,9 @@ int main (void) {
 	
 	for (i=0; i<NUM_TESTS; i++) {
 		read_full_xyz();
-
+  
 		convert_xyz_to_roll_pitch();
+		heading_calc(roll_r,pitch_r);
 
 #ifdef USE_LCD
 		sprintf(buffer, "R: %5.1f", roll);
@@ -92,7 +97,7 @@ int main (void) {
  {
  Control_RGB_LEDs(0,1,0);	 
 	}
- else if((tgr & ptb_pin_8))
+ else if(!(tgr & ptb_pin_8))
  {
   Control_RGB_LEDs(1,0,0); 
 }

@@ -6,3 +6,4 @@
 .\obj\sine_table.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
 .\obj\sine_table.o: C:\Keil_v5\ARM\Inc\Freescale\Kinetis\system_MKL25Z4.h
 .\obj\sine_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\obj\sine_table.o: .\inc\sine_table.h

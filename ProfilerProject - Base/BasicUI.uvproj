@@ -158,7 +158,7 @@
             <CpuDllArguments></CpuDllArguments>
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
+            <InitializationFile>.\DBG_MTB.ini</InitializationFile>
             <Driver>BIN\CMSIS_AGDI.dll</Driver>
           </TargetDlls>
         </DebugOption>
@@ -361,7 +361,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls>--fpmode fast</MiscControls>
-              <Define></Define>
+              <Define>ARM_MATH_CM0PLUS</Define>
               <Undefine></Undefine>
               <IncludePath>.\inc</IncludePath>
             </VariousControls>
@@ -396,7 +396,7 @@
             <ScatterFile></ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc></Misc>
+            <Misc>C:\Keil_v5\ARM\CMSIS\Lib\ARM\arm_cortexM0l_math.lib</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>
@@ -475,6 +475,11 @@
               <FileName>trigger.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\trigger.c</FilePath>
+            </File>
+            <File>
+              <FileName>heading_calc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\heading_calc.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -17,3 +17,5 @@
 .\obj\main.o: .\inc\delay.h
 .\obj\main.o: .\inc\profile.h
 .\obj\main.o: .\inc\trigger.h
+.\obj\main.o: .\inc\heading_calc.h
+.\obj\main.o: .\inc\sine_table.h
