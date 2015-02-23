@@ -6,7 +6,7 @@ float value_scaled;
 
 
 
-float Z,Xrc,Yrc,Zrc,Xh,Yh,Zh,azi,Zsqrt;
+float X,Y,Z,Xrc,Yrc,Zrc,Xh,Yh,Zh,azi,Zsqrt;
 float s_r,c_r,c_p,s_p,s_r_lt,c_r_lt;
 float H_2,X_2,Y_2;
 
@@ -52,7 +52,7 @@ c_r = cosf(roll);
 	*/
 
 	//Z calculation
-	Z=-42.3f;
+	
 
 	/*
 
@@ -71,5 +71,6 @@ Xh=X*c_p+Z*s_p;
 Yh= (X*s_r*s_p)+(Y*c_r)-(Z*s_r*c_p);
 //azimuth calculation
 
-azi = (float)(180+atan2f(-Yh,-Xh)*overPi);
+azi = (float)(90+atan2f(-Yh,-Xh)*overPi);
+if(azi<0) azi =360+azi;
 }

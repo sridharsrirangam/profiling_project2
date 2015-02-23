@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.13.0.0
 Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: narasimha sridhar srirangam, ncsu, LIC=----
+License Information: sridhar srirangam, NCSU, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.13.0.0
@@ -22,7 +22,7 @@ Dialog DLL:      TARMCM1.DLL V1.9.0.0
  
 <h2>Project:</h2>
 Z:\srirangamsridhar On My Mac\GitHub\profiling_project2\ProfilerProject - Base\BasicUI.uvproj
-Project File Date:  02/19/2015
+Project File Date:  02/22/2015
 
 <h2>Output:</h2>
 Rebuild target 'KL25Z Flash'
@@ -37,6 +37,9 @@ compiling LEDs.c...
 compiling timers.c...
 compiling i2c.c...
 compiling mma8451.c...
+src\mma8451.c(162): warning:  #1-D: last line of file ends without a newline
+  // }
+src\mma8451.c: 1 warning, 0 errors
 compiling delay.c...
 compiling sine_table.c...
 compiling profile.c...
@@ -52,11 +55,11 @@ src\heading_calc.c(16): warning:  #223-D: function "arm_mult_f32" declared impli
         arm_mult_f32(&value,&conv,&value_scaled,1);
 src\heading_calc.c: 1 warning, 0 errors
 linking...
-Program Size: Code=5904 RO-data=2436 RW-data=96 ZI-data=3344  
+Program Size: Code=6360 RO-data=2436 RW-data=124 ZI-data=3348  
 After Build - User command #1: "Z:\srirangamsridhar On My Mac\GitHub\profiling_project2\ProfilerProject - Base\Scripts\update_regions_MDK.bat"
 Z:\srirangamsridhar On My Mac\GitHub\profiling_project2\ProfilerProject - Base>Scripts\getregions.exe obj/*.axf -c -osrc/region.c 
 This version of Z:\srirangamsridhar On My Mac\GitHub\profiling_project2\ProfilerProject - Base\Scripts\getregions.exe is not compatible with the version of Windows you're running. Check your computer's system information to see whether you need a x86 (32-bit) or x64 (64-bit) version of the program, and then contact the software publisher.
-".\obj\BasicUI.axf" - 0 Error(s), 4 Warning(s).
+".\obj\BasicUI.axf" - 0 Error(s), 5 Warning(s).
 </pre>
 </body>
 </html>

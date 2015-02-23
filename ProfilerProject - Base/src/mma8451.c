@@ -14,6 +14,7 @@ extern uint32_t DATA_READY;
 
 
 
+
 //initializes mma8451 sensor
 //i2c has to already be enabled
 int init_mma()
@@ -38,21 +39,28 @@ int init_mma()
 	
 }
 
+uint16_t data[3];
+	int16_t temp[3];
+
 void read_full_xyz()
-{
+	{
+		
 	int i;
-	uint8_t data[6];
-	//int16_t temp[3];
-	float temp[3];
-	i2c_start();
+	
+	
+	//float temp[3];
+		start:
+		i2c_start();
 	i2c_read_setup(MMA_ADDR , REG_XHI);
 	
 	for (i=0;i<3;i++)
 	{
 		if(i==2)
-			data[i] = i2c_repeated_read(1);
+		{			data[i] = i2c_repeated_read(1);
+		if(data[i]==0xFFFF) goto start;}
 		else
-			data[i] = i2c_repeated_read(0);
+		{data[i] = i2c_repeated_read(0);
+		if(data[i]==0xFFFF) goto start;}
 	}
 	temp[0] = (data[0]<<8);
 	temp[1] = (data[1]<<8);
@@ -134,7 +142,18 @@ pitch=	(float)pitch_r*overPi;
 	
 }
 
-
+void xyz_to_roll_pitch(void)
+{
+	float ax = 3840*iCOUNTS_PER_G;
+	float ay = -2080*iCOUNTS_PER_G;
+	float az = 15616*iCOUNTS_PER_G;
+	pitch_r= asinf(-ax);
+pitch=	(float)pitch_r*overPi;
+ //roll = asinf(ay/cosf(pitch));
+ roll_r = atan2f(ay,az);
+	roll=(float)roll_r*overPi;
+}
+	
 //mma data ready irq
 // void PORTA_IRQHandler()
 // {

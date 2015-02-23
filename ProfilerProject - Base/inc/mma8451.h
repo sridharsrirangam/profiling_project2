@@ -25,6 +25,7 @@ int init_mma(void);
 void read_full_xyz(void);
 void read_xyz(void);
 void convert_xyz_to_roll_pitch(void);
+void xyz_to_roll_pitch(void);
 
 extern float roll, pitch;
 extern float roll_r,pitch_r;

@@ -18,7 +18,7 @@
 #include "heading_calc.h"
 #include "sine_table.h"
 
-
+extern float X,Y,Z;
 uint32_t t,tgr;
 uint8_t r;
 
@@ -73,6 +73,9 @@ int main (void) {
 		read_full_xyz();
   
 		convert_xyz_to_roll_pitch();
+		X=0.84f;
+	 Y=21.48f;
+	 Z=-42.6f;
 		heading_calc(roll_r,pitch_r);
 
 #ifdef USE_LCD
@@ -93,13 +96,31 @@ int main (void) {
 	{
  t = PTB->PDIR;
  tgr = ((t & trigger_mask));	
- if(!(tgr & ptb_pin_9))
+ if(!(tgr & ptb_pin_9)) //trigger 2
  {
  Control_RGB_LEDs(0,1,0);	 
+	 read_full_xyz();
+  xyz_to_roll_pitch();
+		
+	 X=-13.8f;
+	 Y=16.2f;
+	 Z=-42.42f;
+		heading_calc(roll_r,pitch_r);	 
+	 Control_RGB_LEDs(0,0,0);
+
 	}
- else if(!(tgr & ptb_pin_8))
+ else if(!(tgr & ptb_pin_8)) //trigger 1
  {
-  Control_RGB_LEDs(1,0,0); 
+  Control_RGB_LEDs(1,0,0);
+
+  convert_xyz_to_roll_pitch();
+   
+	 X=16.98f;
+	 Y=9.66f;
+	 Z=-42.3f;
+		heading_calc(roll_r,pitch_r);	 
+	 Control_RGB_LEDs(0,0,0);
+	 
 }
 }
 }
