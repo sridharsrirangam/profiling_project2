@@ -10,5 +10,3 @@ void init_trigger(void)
 	PORTB->PCR[trigger2] |= PORT_PCR_MUX(1)| PORT_PCR_PS_MASK |PORT_PCR_PE_MASK ;     
 	
 }
-
-	

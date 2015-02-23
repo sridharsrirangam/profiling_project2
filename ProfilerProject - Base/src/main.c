@@ -98,7 +98,7 @@ int main (void) {
  tgr = ((t & trigger_mask));	
  if(!(tgr & ptb_pin_9)) //trigger 2
  {
- Control_RGB_LEDs(0,1,0);	 
+ Control_RGB_LEDs(0,0,1);	 
 	 read_full_xyz();
   xyz_to_roll_pitch();
 		
@@ -122,6 +122,17 @@ int main (void) {
 	 Control_RGB_LEDs(0,0,0);
 	 
 }
+ else{
+ Control_RGB_LEDs(0,1,0);
+	read_full_xyz();
+  
+		convert_xyz_to_roll_pitch();
+		X=0.84f;
+	 Y=21.48f;
+	 Z=-42.6f;
+		heading_calc(roll_r,pitch_r);
+Control_RGB_LEDs(0,0,0);	 
+ }
 }
 }
 // *******************************ARM University Program Copyright © ARM Ltd 2013*************************************   

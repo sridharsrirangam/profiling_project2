@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\obj\BasicUI.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\obj\BasicUI.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Sun Feb 22 18:50:00 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Feb 23 02:08:23 2015
 <BR><P>
 <H3>Maximum Stack Usage =        140 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -235,7 +235,7 @@ Global Symbols
 <P><STRONG><a name="[1e]"></a>USB0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_mkl25z4.o(RESET)
 </UL>
-<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 266 bytes, Stack size 0 bytes, main.o(.text))
+<P><STRONG><a name="[26]"></a>main</STRONG> (Thumb, 318 bytes, Stack size 0 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = main &rArr; heading_calc &rArr; atan2f &rArr; __mathlib_flt_infnan2 &rArr; __aeabi_fadd &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xyz_to_roll_pitch
@@ -255,28 +255,6 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[33]"></a>Delay</STRONG> (Thumb, 20 bytes, Stack size 4 bytes, delay.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Delay
-</UL>
-<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_xyz
-<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mma
-<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[43]"></a>__ARM_scalbnf</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, fscalb.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_rredf2
-<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_underflow
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_infnan
-<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;asinf
-<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convert_xyz_to_roll_pitch
-</UL>
-
-<P><STRONG><a name="[69]"></a>scalbnf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fscalb.o(.text), UNUSED)
-
-<P><STRONG><a name="[6a]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, iusefp.o(.text), UNUSED)
-
-<P><STRONG><a name="[6b]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
-
 <P><STRONG><a name="[2d]"></a>Init_RGB_LEDs</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, leds.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -302,11 +280,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Profiling
 </UL>
 
-<P><STRONG><a name="[6c]"></a>Stop_PIT</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
+<P><STRONG><a name="[69]"></a>Stop_PIT</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
 
-<P><STRONG><a name="[6d]"></a>Init_PWM</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
+<P><STRONG><a name="[6a]"></a>Init_PWM</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
 
-<P><STRONG><a name="[6e]"></a>Set_PWM_Values</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
+<P><STRONG><a name="[6b]"></a>Set_PWM_Values</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, timers.o(.text), UNUSED)
 
 <P><STRONG><a name="[30]"></a>i2c_init</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, i2c.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -316,7 +294,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_full_xyz
 </UL>
 
-<P><STRONG><a name="[6f]"></a>i2c_RESET</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, i2c.o(.text), UNUSED)
+<P><STRONG><a name="[6c]"></a>i2c_RESET</STRONG> (Thumb, 102 bytes, Stack size 8 bytes, i2c.o(.text), UNUSED)
 
 <P><STRONG><a name="[3c]"></a>i2c_wait</STRONG> (Thumb, 150 bytes, Stack size 8 bytes, i2c.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = i2c_wait
@@ -407,6 +385,14 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
+<P><STRONG><a name="[33]"></a>Delay</STRONG> (Thumb, 20 bytes, Stack size 4 bytes, delay.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;read_xyz
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_mma
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
 <P><STRONG><a name="[2f]"></a>Init_SineTable</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, sine_table.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = Init_SineTable &rArr; sinf &rArr; __mathlib_rredf2 &rArr; __aeabi_frsub &rArr; __aeabi_fadd &rArr; _float_epilogue
 </UL>
@@ -472,7 +458,7 @@ Global Symbols
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;heading_calc
 </UL>
 
-<P><STRONG><a name="[70]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<P><STRONG><a name="[6d]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
 
 <P><STRONG><a name="[2c]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_uidivmod
@@ -538,6 +524,16 @@ Global Symbols
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_SineTable
 </UL>
 
+<P><STRONG><a name="[43]"></a>__ARM_scalbnf</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, fscalb.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_rredf2
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_underflow
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_infnan
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;asinf
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;convert_xyz_to_roll_pitch
+</UL>
+
+<P><STRONG><a name="[6e]"></a>scalbnf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fscalb.o(.text), UNUSED)
+
 <P><STRONG><a name="[42]"></a>__aeabi_i2f</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, fflti.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = __aeabi_i2f &rArr; _float_epilogue
 </UL>
@@ -555,6 +551,8 @@ Global Symbols
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sine_calc
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;heading_calc
 </UL>
+
+<P><STRONG><a name="[6f]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[52]"></a>_float_round</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, fepilogue.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsqrt
@@ -595,7 +593,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[71]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[70]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[57]"></a>_fsqrt</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, fsqrt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _fsqrt
@@ -679,7 +677,9 @@ Global Symbols
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cosf
 </UL>
 
-<P><STRONG><a name="[72]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[71]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[72]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
 <P><STRONG><a name="[73]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
